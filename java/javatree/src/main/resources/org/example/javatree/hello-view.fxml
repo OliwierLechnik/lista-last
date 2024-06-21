@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="rootfx" alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javatree.ClientGUIController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+          <Button fx:id="insertfx" mnemonicParsing="false" onAction="#insert" text="insert" />
+            <Button fx:id="deletefx" mnemonicParsing="false" text="delete" />
+            <Button fx:id="searchfx" mnemonicParsing="false" text="search" />
+            <Button fx:id="drawfx" mnemonicParsing="false" onAction="#draw" text="draw" />
+            <TextField fx:id="textfx" />
+        </buttons>
+      </ButtonBar>
+      <Pane fx:id="panefx" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</VBox>
